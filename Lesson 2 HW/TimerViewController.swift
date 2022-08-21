@@ -45,8 +45,8 @@ final class TimerViewController: UIViewController {
     private var timerValue = 0
     private var timer = Timer()
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
 
         view.backgroundColor = .white
         view.addSubview(stackView)
